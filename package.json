@@ -1,0 +1,72 @@
+{
+  "name": "@sommelierx/mcp-server",
+  "version": "1.1.0",
+  "description": "Wine pairing intelligence for AI assistants. Ask any MCP-compatible client (Claude, Cursor, Windsurf) for wine recommendations and get scored matches from a sommelier-grade algorithm. Supports API key and x402 (USDC on Base) payment.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "sommelierx-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "wine",
+    "food-pairing",
+    "wine-pairing",
+    "pairing",
+    "sommelier",
+    "ai",
+    "llm",
+    "tool",
+    "claude",
+    "cursor",
+    "windsurf",
+    "recipe",
+    "food",
+    "dining",
+    "x402",
+    "USDC",
+    "Base",
+    "crypto-payments",
+    "pay-per-call",
+    "agent-payments"
+  ],
+  "author": "SommelierX <hello@sommelierx.com> (https://sommelierx.com)",
+  "license": "MIT",
+  "homepage": "https://docs.sommelierx.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rogertheunissenmerge-oss/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rogertheunissenmerge-oss/mcp-server/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.12.1",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
