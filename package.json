@@ -1,6 +1,7 @@
 {
   "name": "@sommelierx/mcp-server",
-  "version": "1.1.1",
+  "version": "1.1.2",
+  "mcpName": "io.github.rogertheunissenmerge-oss/mcp-server",
   "description": "Wine pairing intelligence for AI assistants. Ask any MCP-compatible client (Claude, Cursor, Windsurf) for wine recommendations and get scored matches from a sommelier-grade algorithm. Supports API key and x402 (USDC on Base) payment.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
