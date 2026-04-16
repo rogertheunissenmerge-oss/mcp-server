@@ -1,0 +1,45 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.rogertheunissenmerge-oss/mcp-server",
+  "description": "Wine pairing intelligence with 7 tools. Deterministic scoring, sommelier-calibrated.",
+  "repository": {
+    "url": "https://github.com/rogertheunissenmerge-oss/mcp-server",
+    "source": "github"
+  },
+  "version": "1.1.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@sommelierx/mcp-server",
+      "version": "1.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Optional API key for Pro/Enterprise tier access. Without a key, free tier (50 calls/day) is used.",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true,
+          "name": "SOMMELIERX_API_KEY"
+        },
+        {
+          "description": "API base URL (defaults to https://api.sommelierx.com).",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false,
+          "name": "SOMMELIERX_API_URL",
+          "default": "https://api.sommelierx.com"
+        },
+        {
+          "description": "Default language for responses: en, nl, fr, de, es, or it.",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false,
+          "name": "SOMMELIERX_LANGUAGE",
+          "default": "en"
+        }
+      ]
+    }
+  ]
+}
